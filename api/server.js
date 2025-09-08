@@ -1,7 +1,6 @@
 // Import required packages
 const express = require('express');
 const cors = require('cors');
-const fetch = require('node-fetch');
 
 // Initialize Express app
 const app = express();
