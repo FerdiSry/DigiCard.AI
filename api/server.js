@@ -140,6 +140,10 @@ app.delete('/api/cards/:id', (req, res) => {
     res.status(204).send(); // No content
 });
 
+app.post('/api/test', (req, res) => {
+  res.status(200).json({ message: "POST request to /api/test successful!" });
+});
+
 // Health check / ping
 app.get('/api/ping', (req, res) => {
   res.json({ message: 'pong 🚀 API is alive' });
