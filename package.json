@@ -1,0 +1,17 @@
+{
+  "name": "digicard-ai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "api"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend start",
+    "dev:backend": "npm --prefix api start",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
